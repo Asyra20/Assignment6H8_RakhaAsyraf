@@ -7,7 +7,8 @@ const Search = ({ onSearch }) => {
     setTerm(e.target.value);
   };
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault();
     onSearch(term);
   };
 
